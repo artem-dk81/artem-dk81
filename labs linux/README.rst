@@ -33,40 +33,39 @@
 ~~~~~~~~~~~~~~
 .. code-block:: 
 
-
-bash-5.1$ cd Projects/ArgsParse/
- bash-5.1$ ls
- find-new  find-new.c  find-new.o  Makefile  utils.c  utils.h  utils.o
- bash-5.1$ make clean
- rm -rf *.o *.out main
- bash-5.1$ ls
- find-new  find-new.c  Makefile  utils.c  utils.h
- bash-5.1$ make
- gcc -c -Wall -Wextra find-new.c
- gcc -c -Wall -Wextra utils.c
- gcc find-new.o utils.o -o find-new
- bash-5.1$ ./find-new -p . -d 2022-01-01 -v
- 2022-01-14 Makefile
- 2022-01-14 find-new.c
- 2022-01-14 utils.c
- 2022-01-14 utils.h
- 2022-01-14 find-new.o
- 2022-01-14 utils.o
- 2022-01-14 find-new
- bash-5.1$ ./find-new -p . -d 2023-01-01 -v
- bash-5.1$ ./find-new -p ./path_not_exists -d 2023-01-01 -v
- Invalid path
- bash-5.1$ ./find-new -p . -d 2023-dd -v
- Invalid date, date must have yyyy-mm-dd format
- bash-5.1$ ./find-new -p . -d 2021-01-01
- Makefile
- find-new.c
- utils.c
- utils.h
- find-new.o
- utils.o
- find-new
- bash-5.1$
+	bash-5.1$ cd Projects/ArgsParse/
+	bash-5.1$ ls
+	find-new  find-new.c  find-new.o  Makefile  utils.c  utils.h  utils.o
+ 	bash-5.1$ make clean
+ 	rm -rf *.o *.out main
+	bash-5.1$ ls
+ 	find-new  find-new.c  Makefile  utils.c  utils.h
+ 	bash-5.1$ make
+ 	gcc -c -Wall -Wextra find-new.c
+ 	gcc -c -Wall -Wextra utils.c
+	 gcc find-new.o utils.o -o find-new
+ 	bash-5.1$ ./find-new -p . -d 2022-01-01 -v
+ 	2022-01-14 Makefile
+ 	2022-01-14 find-new.c
+ 	2022-01-14 utils.c
+ 	2022-01-14 utils.h
+ 	2022-01-14 find-new.o
+ 	2022-01-14 utils.o
+ 	2022-01-14 find-new
+ 	bash-5.1$ ./find-new -p . -d 2023-01-01 -v
+ 	bash-5.1$ ./find-new -p ./path_not_exists -d 2023-01-01 -v
+ 	Invalid path
+ 	bash-5.1$ ./find-new -p . -d 2023-dd -v
+ 	Invalid date, date must have yyyy-mm-dd format
+ 	bash-5.1$ ./find-new -p . -d 2021-01-01
+	 Makefile
+ 	find-new.c
+ 	utils.c
+ 	utils.h
+	 find-new.o
+ 	utils.o
+ 	find-new
+ 	bash-5.1$
 
 **Висновок:**
 ~~~~~~~~~~~~~~
