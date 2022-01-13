@@ -31,7 +31,10 @@
 
 **Результат:**
 ~~~~~~~~~~~~~~
- bash-5.1$ cd Projects/ArgsParse/
+.. code-block:: 
+
+
+bash-5.1$ cd Projects/ArgsParse/
  bash-5.1$ ls
  find-new  find-new.c  find-new.o  Makefile  utils.c  utils.h  utils.o
  bash-5.1$ make clean
